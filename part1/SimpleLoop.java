@@ -8,6 +8,19 @@ class SimpleLoop
          practice the syntax for a loop.
       */
 
-      return 0;
+        // check that low is NOT greater than the high
+        if (low > high)
+        {
+            return 0;
+        }
+
+        // for loo using range of (low, high)
+        int sum = 0;
+        for (int i = low; i < high + 1; i++)
+        {
+            sum += i;
+        }
+        return sum;      
+
    }
 }
