@@ -6,6 +6,23 @@ class SimpleIf
          argument is larger and return that value.
       */
 
-      return 0; // clearly not correct -- but testable
+        // if x is greater than y
+        if (x > y)
+        {
+            return x;
+        }
+
+        // if y is greater than x
+        else if (y > x)
+        {
+            return y;
+        }
+        
+        // if values are equal 
+        else
+        {
+            return 0;
+        }
+
    }
 }
