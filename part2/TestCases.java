@@ -20,10 +20,37 @@ public class TestCases
    /*
     * This test is just to get you started.
     */
+
    @Test
    public void testGetX()
    {
       assertEquals(1.0, new Point(1.0, 2.0).getX(), DELTA);
+   }
+
+   @Test
+   public void testGetY()
+   {
+      assertEquals(3.0, new Point(4.0, 3.0).getY(), DELTA);
+   }
+
+   @Test
+   public void testGetRadius()
+   {
+      assertEquals(5.6568542, new Point(4.0, 4.0).getRadius(), DELTA);
+   }
+
+   @Test
+   public void testGetAngle()
+   {
+      assertEquals(0.5880026, new Point(2.0, 3.0).getAngle(), DELTA);
+   }
+
+   @Test
+   public void testRotate90()
+   {
+      Point point1 = new Point(5.0, 6.0);
+      assertEquals(5.0, point1.rotate90().getY(), DELTA);
+      assertEquals(-6.0, point1.rotate90().getX(), DELTA);
    }
 
    /*
