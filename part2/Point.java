@@ -29,7 +29,7 @@ public class Point
 
     public double getAngle()
     {
-        double angle = Math.atan2(x, y);
+        double angle = Math.atan2(y, x);
         return angle;
     }
 
