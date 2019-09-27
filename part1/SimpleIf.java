@@ -21,7 +21,7 @@ class SimpleIf
         // if values are equal 
         else
         {
-            return 0;
+            return x;
         }
 
    }
