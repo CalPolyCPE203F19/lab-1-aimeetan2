@@ -1,3 +1,5 @@
+// Name: Aimee Tan
+
 public class Point
 {
     private double x;
